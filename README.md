@@ -11,7 +11,7 @@ PolyU MSc in IT。我在做一件事：把 LLM 塞进**确定性工程边界**�
 | 项目 | 一句话 | 技术栈 | 工程证据 |
 | --- | --- | --- | --- |
 | [**OmniCraft（万象工坊）**](https://github.com/Leewwp/OmniCraft) | IP 二创内容社区：单 Agent RAG 工作台——服务端引用复核、可见性过滤、可降级混合检索、可靠异步 | Go 1.25 / Gin · Next.js 16 · PostgreSQL 16 + pgvector · Redis Streams · OTel/Jaeger | 冻结语料真实 MiniMax 差分评测（63 cases）：Recall@10 **0.492**、MRR **0.437**（keyword baseline 0.370）、0 visibility leak；前端 464 测试 + 全量验证门 73/73 |
-| [**health-agent**](https://github.com/Leewwp/health_agent) | 三品类统一健康助手：Java 状态机确定性编排多角色工作流，契约化降级 + 混合检索 RAG + MCP 服务端 | Java 21 / Spring Boot 3 · AgentScope + DashScope · MySQL + Flyway · Qdrant · MCP Java SDK | **907** 个自动化测试（MySQL 门控 907/4）+ 前端 42 契约测试；60 条标注查询集驱动出两段式检索路由（P95 延迟降为 Hybrid 的 40%、硬约束零违规） |
+| [**health-agent**](https://github.com/Leewwp/health_agent) | 三品类统一健康助手：Java 状态机确定性编排多角色工作流，契约化降级 + 混合检索 RAG + MCP 服务端 | Java 21 / Spring Boot 3 · AgentScope + DashScope · MySQL + Flyway · Qdrant · MCP Java SDK | **910** 个自动化测试（0 失败，53 个环境门控跳过）+ 前端 42 契约测试；60 条标注查询集驱动出两段式检索路由（P95 延迟降为 Hybrid 的 40%、硬约束零违规） |
 
 <details>
 <summary><strong>🎬 前作：diet 三部曲演进主线</strong></summary>
