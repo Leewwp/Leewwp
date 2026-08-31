@@ -51,12 +51,4 @@ Proactive-Diet-Shopping-Assistant   →   diet-agent   →   health-agent
 
 ---
 
-<div align="center">
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=Leewwp&show_icons=true&theme=default&rank_icon=github" alt="Leewwp's GitHub stats" />
-  &nbsp;
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Leewwp&layout=compact&theme=default&langs_count=8&exclude_repo=backup,notes-and-code" alt="Top languages" />
-</div>
-
-<!--
-⭐ 如果我的项目对你有帮助，欢迎 Star / 交流：Issue 与讨论区永远开放
--->
+⭐ 如果我的项目对你有帮助，欢迎 Star；Issue 与讨论区永远开放，欢迎交流大模型应用与 Agent 工程化话题。
