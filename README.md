@@ -1,24 +1,72 @@
-### 你好，我是 Li Weipei
+<div align="center">
 
-PolyU MSc in IT 在读，坐标香港。写 Java 和 Go，主要做 LLM 应用与 Agent 工程化，关心的是让大模型在真实系统里可靠干活的问题：检索质量、失败降级、可观测性、安全边界。平时维护自己的开源项目，也给我在用的开源项目提 PR。
+[![English](https://img.shields.io/badge/English-2f81f7?style=flat-square)](README.md)
+[![简体中文](https://img.shields.io/badge/简体中文-d0d7de?style=flat-square)](README.zh-CN.md)
 
-#### 技术栈
+# Li Weipei · Leewwp
 
-- **语言**：Java / Go / TypeScript / Python
-- **后端**：Spring Boot 3 · Gin
-- **LLM 应用**：RAG（pgvector / Elasticsearch / Qdrant）· Agent 编排 · MCP · DashScope / MiniMax / DeepSeek
-- **数据与中间件**：PostgreSQL · MySQL · Redis / Redis Streams
-- **前端**：Next.js / React · React Native
-- **工程化**：Docker · GitHub Actions CI/CD · OpenTelemetry
+**Backend engineer — Go & Java.** I build the parts of an LLM application that have to survive production:
+retrieval quality, agent orchestration, failure degradation, observability, and security boundaries.
 
-#### 主要项目
+<sub>Hong Kong</sub>
 
-**[OmniCraft（万象工坊）](https://github.com/Leewwp/OmniCraft)** — IP 二创内容社区平台，核心是服务端收口的单 Agent RAG 工作台：引用复核、可见性过滤、可降级混合检索、Transactional Outbox 异步链路。Go + Next.js + PostgreSQL/pgvector + Redis Streams，带离线评测、安全门禁和全链路追踪。
+</div>
 
-**[polyu-agent](https://github.com/Leewwp/polyu-agent)** — 香港理工校园信息问答 Agent（非官方，线上 [polyuguide.com](https://polyuguide.com)），基于 [nageoffer/ragent](https://github.com/nageoffer/ragent) 二次开发：分域知识库、引用溯源、定时资讯更新、中英双语问答。Spring Boot 3 + pgvector/Elasticsearch + React。
+---
 
-#### 开源贡献
+## Focus
 
-- **[docling-project/docling-core #766](https://github.com/docling-project/docling-core/pull/766)**（已合并）— 修复 Markdown 表格序列化时行头误入表头的问题
-- **[elastic/beats #53159](https://github.com/elastic/beats/pull/53159)** — filebeat / winlogbeat 面向用户的报错文案修正
-- **[nageoffer/ragent](https://github.com/nageoffer/ragent/pulls?q=is%3Apr+is%3Aopen+author%3ALeewwp) #131 #132 #133 #136** — 文档抓取链路出站校验与响应上限、上传端点限流、解析器加固、CI 偶发失败修复
+| Area | In practice |
+| --- | --- |
+| **Retrieval & RAG** | Hybrid retrieval over pgvector / Elasticsearch / Qdrant · citation traceability · visibility filtering · degrading gracefully when a backend is unavailable |
+| **Agent engineering** | Tool orchestration · MCP servers and clients · prompt lifecycle and versioning · structured-output contracts |
+| **Production hardening** | End-to-end tracing · LLM cost accounting · tenant and permission boundaries · CI quality gates |
+
+## Projects
+
+**[OmniCraft](https://github.com/Leewwp/OmniCraft)** · Go · Next.js · PostgreSQL/pgvector · Redis Streams
+A content-sharing platform whose core is a server-mediated, single-agent RAG workbench: citation re-checking, visibility filtering, degradation-capable hybrid retrieval, and a transactional-outbox async pipeline. Ships with offline evaluation, security gates, and full-trace observability.
+
+**[polyu-agent](https://github.com/Leewwp/polyu-agent)** · Spring Boot 3 · pgvector / Elasticsearch · React · [polyuguide.com](https://polyuguide.com)
+A bilingual Q&A agent for campus information at PolyU (unofficial). Domain-partitioned knowledge bases, citation traceability, and scheduled content refresh on a deterministic ingestion pipeline.
+
+**[health_agent](https://github.com/Leewwp/health_agent)** · Java · Spring Boot
+A unified health assistant covering three product categories. Deterministic multi-role workflow orchestration driven by an explicit state machine, contract-based degradation, hybrid-retrieval RAG, and an MCP server surface — backed by 900+ automated tests.
+
+**[ppp-rpc](https://github.com/Leewwp/ppp-rpc)** · Java · Netty · ZooKeeper
+A lightweight RPC framework built from the wire up: Netty transport, ZooKeeper-based service discovery, three load-balancing strategies, and retry policies.
+
+<details>
+<summary><b>Also built</b></summary>
+
+- **[jewel-ar-tryon](https://github.com/Leewwp/jewel-ar-tryon)** — technical PoC for AR jewelry try-on in a WeChat Mini Program.
+- **[Proactive-Diet-Shopping-Assistant](https://github.com/Leewwp/Proactive-Diet-Shopping-Assistant)** — Expo / React Native shopping assistant: barcode and vision recognition, allergen conflict detection, nutrition-compliance scoring.
+- **[ADA_Project](https://github.com/Leewwp/ADA_Project)** — short-horizon air-quality forecasting: multivariate time-series ETL, feature engineering, multi-model comparison over the Open-Meteo API.
+- **[ppp-blog](https://github.com/Leewwp/ppp-blog)** — Halo 2.x blog stack: Docker Compose deployment, GitHub Actions CI/CD, monitoring and alerting.
+
+</details>
+
+## Open source
+
+Contributions to projects I depend on:
+
+- **[docling-project/docling-core #766](https://github.com/docling-project/docling-core/pull/766)** — Markdown table serialization: row-header rows no longer leak into the table header block.
+- **[elastic/beats #53159](https://github.com/elastic/beats/pull/53159)** — corrected wording defects in user-facing error messages (filebeat, winlogbeat).
+- **[nageoffer/ragent #131](https://github.com/nageoffer/ragent/pull/131) [#132](https://github.com/nageoffer/ragent/pull/132) [#133](https://github.com/nageoffer/ragent/pull/133) [#136](https://github.com/nageoffer/ragent/pull/136)** — document-ingestion hardening (outbound validation, response size caps, no error-body echo), upload-endpoint rate limiting, parser/module cleanup, and a flaky-CI fix in the trace test suite.
+
+## Stack
+
+- **Languages** — Go · Java · TypeScript · Python
+- **Backend** — Spring Boot 3 · Gin · Netty
+- **LLM / Agent** — RAG (pgvector · Elasticsearch · Qdrant) · agent orchestration · MCP · DashScope / MiniMax / DeepSeek
+- **Data** — PostgreSQL · MySQL · Redis / Redis Streams
+- **Frontend** — Next.js / React · React Native
+- **Engineering** — Docker · GitHub Actions · OpenTelemetry
+
+## Elsewhere
+
+- **Live product** — [polyuguide.com](https://polyuguide.com)
+
+<div align="center">
+<sub>Open to conversations about agent engineering, retrieval quality, and production LLM infrastructure.</sub>
+</div>
