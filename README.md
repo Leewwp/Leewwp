@@ -27,7 +27,7 @@ retrieval quality, agent orchestration, failure degradation, observability, and 
 **[OmniCraft](https://github.com/Leewwp/OmniCraft)** · Go · Next.js · PostgreSQL/pgvector · Redis Streams
 A content-sharing platform whose core is a server-mediated, single-agent RAG workbench: citation re-checking, visibility filtering, degradation-capable hybrid retrieval, and a transactional-outbox async pipeline. Ships with offline evaluation, security gates, and full-trace observability.
 
-**[polyu-agent](https://github.com/Leewwp/polyu-agent)** · Spring Boot 3 · pgvector / Elasticsearch · React · [polyuguide.com](https://polyuguide.com)
+**[polyu-agent](https://github.com/Leewwp/polyu-agent)** · Spring Boot 4 · pgvector / Elasticsearch · React · [polyuguide.com](https://polyuguide.com)
 A bilingual Q&A agent for campus information at PolyU (unofficial). Domain-partitioned knowledge bases, citation traceability, and scheduled content refresh on a deterministic ingestion pipeline.
 
 **[health_agent](https://github.com/Leewwp/health_agent)** · Java · Spring Boot
@@ -57,7 +57,7 @@ Contributions to projects I depend on:
 ## Stack
 
 - **Languages** — Go · Java · TypeScript · Python
-- **Backend** — Spring Boot 3 · Gin · Netty
+- **Backend** — Spring Boot 4 · Gin · Netty
 - **LLM / Agent** — RAG (pgvector · Elasticsearch · Qdrant) · agent orchestration · MCP · DashScope / MiniMax / DeepSeek
 - **Data** — PostgreSQL · MySQL · Redis / Redis Streams
 - **Frontend** — Next.js / React · React Native
