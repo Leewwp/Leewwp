@@ -27,7 +27,7 @@
 **[OmniCraft（万象工坊）](https://github.com/Leewwp/OmniCraft)** · Go · Next.js · PostgreSQL/pgvector · Redis Streams
 内容分享平台，核心是服务端收口的单 Agent RAG 工作台：引用复核、可见性过滤、可降级混合检索、Transactional Outbox 异步链路。带离线评测、安全门禁与全链路追踪。
 
-**[polyu-agent](https://github.com/Leewwp/polyu-agent)** · Spring Boot 3 · pgvector / Elasticsearch · React · [polyuguide.com](https://polyuguide.com)
+**[polyu-agent](https://github.com/Leewwp/polyu-agent)** · Spring Boot 4 · pgvector / Elasticsearch · React · [polyuguide.com](https://polyuguide.com)
 面向理大校园信息的双语问答 Agent（非官方）。分域知识库、引用溯源、定时资讯刷新，落在一条确定性抓取链路上。
 
 **[health_agent](https://github.com/Leewwp/health_agent)** · Java · Spring Boot
@@ -57,7 +57,7 @@
 ## 技术栈
 
 - **语言** —— Go · Java · TypeScript · Python
-- **后端** —— Spring Boot 3 · Gin · Netty
+- **后端** —— Spring Boot 4 · Gin · Netty
 - **LLM / Agent** —— RAG（pgvector · Elasticsearch · Qdrant）· Agent 编排 · MCP · DashScope / MiniMax / DeepSeek
 - **数据** —— PostgreSQL · MySQL · Redis / Redis Streams
 - **前端** —— Next.js / React · React Native
