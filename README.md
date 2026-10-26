@@ -3,7 +3,7 @@
 [![English](https://img.shields.io/badge/English-2f81f7?style=flat-square)](README.md)
 [![简体中文](https://img.shields.io/badge/简体中文-d0d7de?style=flat-square)](README.zh-CN.md)
 
-# Leewwp · Leewwp
+# Leewwp
 
 **Backend engineer — Go & Java.** I build the parts of an LLM application that have to survive production:
 retrieval quality, agent orchestration, failure degradation, observability, and security boundaries.
