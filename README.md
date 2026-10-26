@@ -8,8 +8,6 @@
 **Backend engineer — Go & Java.** I build the parts of an LLM application that have to survive production:
 retrieval quality, agent orchestration, failure degradation, observability, and security boundaries.
 
-<sub>Hong Kong</sub>
-
 </div>
 
 ---
