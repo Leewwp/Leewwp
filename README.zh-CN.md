@@ -3,7 +3,7 @@
 [![English](https://img.shields.io/badge/English-d0d7de?style=flat-square)](README.md)
 [![简体中文](https://img.shields.io/badge/简体中文-2f81f7?style=flat-square)](README.zh-CN.md)
 
-# Leewwp · Leewwp
+# Leewwp
 
 **后端工程师 —— Go & Java。** 我做大模型应用里那些必须在上线环境扛住的部分：
 检索质量、Agent 编排、失败降级、可观测性，以及安全边界。
